@@ -1,0 +1,37 @@
+[project]
+name = "uamobile"
+version = "0.4.0"
+description = "WSGIUserAgentMobile - mobile user agent string parser for WSGI applications"
+readme = "README.md"
+license = "MIT"  
+authors = [
+    {name = "Chihiro Sakatoku", email = "csakatoku@gmail.com"},
+    {name = "Faris Prakoso", email = "faris.prakoso@rakuten.com"},
+]
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+]
+dependencies = [
+    "IPy",
+    "importlib-metadata; python_version < '3.8'", # importlib is in the standard library since Python 3.8
+]
+
+[project.urls]
+Homepage = "https://github.com/r-faris-prakoso/uamobile"
+Source = "https://github.com/csakatoku/uamobile"
+
+[tool.setuptools.packages.find]
+exclude = ["examples", "tests"]
+
+[project.scripts]
+uamobile-scrape = "uamobile.scrapers.command:main"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false

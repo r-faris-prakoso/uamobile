@@ -11,3 +11,7 @@ http://search.cpan.org/~kurihara/HTTP-MobileAgent-0.26/lib/HTTP/MobileAgent.pm
 PEAR::Net_UserAgent_Mobile
 http://pear.php.net/package/Net_UserAgent_Mobile
 
+## Update
+Forked from 
+http://github.com/csakatoku/uamobile
+i need to update this so compatible with python 3.13

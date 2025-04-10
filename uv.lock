@@ -1,0 +1,22 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "ipy"
+version = "1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/a4/9c0d88d95666ff1571d7baec6c5e26abc08051801feb6e6ddf40f6027e22/IPy-1.01.tar.gz", hash = "sha256:edeca741dea2d54aca568fa23740288c3fe86c0f3ea700344571e9ef14a7cc1a", size = 33641 }
+
+[[package]]
+name = "uamobile"
+version = "0.4.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ipy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "importlib-metadata", marker = "python_full_version < '3.8'" },
+    { name = "ipy" },
+]

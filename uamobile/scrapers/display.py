@@ -25,7 +25,7 @@ class DoCoMoScraper(Scraper):
 
                 # model
                 model_text = u''.join(columns[model_index].itertext()).strip()
-                matcher = re.match(ur'([A-Z]{1,2})-?(\d{1,4}[a-zA-Z\u03bc]*)', model_text)
+                matcher = re.match(r'([A-Z]{1,2})-?(\d{1,4}[a-zA-Zμ]*)', model_text)
                 if not matcher:
                     continue
 
@@ -37,7 +37,7 @@ class DoCoMoScraper(Scraper):
 
                 # height, width
                 display_text = u''.join(columns[display_index].itertext())
-                matcher = re.search(ur'(\d+).(\d+)', display_text)
+                matcher = re.search(r'(\d+)\D+(\d+)', display_text)
                 if not matcher:
                     continue
 

@@ -26,7 +26,7 @@ class EZwebUserAgent(UserAgent):
         env = self.environ
         try:
             width, height = map(int, env['HTTP_X_UP_DEVCAP_SCREENPIXELS'].split(',', 1))
-        except (KeyError, ValueError), e:
+        except (KeyError, ValueError):
             width = None
             height = None
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from uamobile.cidr import IP, get_ip
-from uamobile.factory.docomo import *
-from uamobile.factory.ezweb import *
-from uamobile.factory.softbank import *
-from uamobile.factory.willcom import *
+from uamobile.factory.docomo import DoCoMoUserAgentFactory
+from uamobile.factory.ezweb import EZwebUserAgentFactory
+from uamobile.factory.softbank import SoftBankUserAgentFactory
+from uamobile.factory.willcom import WillcomUserAgentFactory
 
 def normalize_carrier_name(carrier):
     return carrier.lower()

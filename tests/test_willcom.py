@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from tests import msg
 from uamobile import *
 from uamobile.willcom import WillcomUserAgent
 from uamobile.factory.willcom import WillcomUserAgentFactory

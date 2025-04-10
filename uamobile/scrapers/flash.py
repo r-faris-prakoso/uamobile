@@ -19,7 +19,7 @@ class DoCoMoScraper(Scraper):
                     continue
 
                 model = span.text.strip()
-                matcher = re.match(ur'([A-Z]{1,2})-?(\d{1,3}[a-zA-Z\u03bc]+)', model)
+                matcher = re.match(r'([A-Z]{1,2})-?(\d{1,3}[a-zA-Zμ]+)', model)
                 if not matcher:
                     continue
 

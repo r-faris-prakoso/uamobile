@@ -84,7 +84,7 @@ class SoftBankUserAgentParser(UserAgentParser):
 
             try:
                 vendor, vendor_version = ua[1].split('/')
-            except ValueError, e:
+            except ValueError:
                 pass
 
             info.update([x.split('/', 1) for x in ua[1:]])

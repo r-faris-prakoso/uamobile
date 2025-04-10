@@ -53,7 +53,7 @@ class WillcomUserAgentParser(UserAgentParser):
                      'arch'           : arch.strip(),
                      'display_bytes'  : width_and_height.strip(),
                      }
-        except ValueError, e:
+        except ValueError:
             return {}
 
 

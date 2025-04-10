@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-import sys, os
+import sys
 
 INSTALL_REQUIRES = [
     'IPy',

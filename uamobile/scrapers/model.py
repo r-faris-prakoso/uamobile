@@ -25,9 +25,9 @@ class EZWebScraper(Scraper):
                                 continue
 
                             if idx == 0:
-                                res.append((device, unicode(model)))
+                                res.append((device, model))
                             else:
                                 pos = models[0].find(model[0])
                                 model_name = models[0][:pos] + model
-                                res.append((device, unicode(model_name)))
+                                res.append((device, model_name))
         return res
